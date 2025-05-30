@@ -1,0 +1,415 @@
+{\rtf1\ansi\ansicpg932\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="ja">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>\uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u30740 \u31350 \u12398 \u26368 \u26032 \u21205 \u21521  \u12452 \u12531 \u12501 \u12457 \u12464 \u12521 \u12501 \u12451 \u12483 \u12463 </title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">\
+    <style>\
+        body \{\
+            font-family: 'Inter', sans-serif;\
+            background-color: #f0f4f8; /* Light blue-gray background */\
+        \}\
+        .chart-container \{\
+            position: relative;\
+            width: 100%;\
+            max-width: 600px;\
+            margin-left: auto;\
+            margin-right: auto;\
+            height: 300px; \
+            max-height: 400px;\
+        \}\
+        @media (min-width: 768px) \{\
+            .chart-container \{\
+                height: 350px;\
+            \}\
+        \}\
+        .stat-card \{\
+            background-color: #ffffff;\
+            border-radius: 0.5rem;\
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\
+            padding: 1.5rem;\
+            margin-bottom: 1.5rem;\
+            transition: transform 0.3s ease, box-shadow 0.3s ease;\
+        \}\
+        .stat-card:hover \{\
+            transform: translateY(-5px);\
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\
+        \}\
+        .brand-primary \{ color: #0052D4; \} /* Brilliant Blue Primary */\
+        .brand-secondary \{ color: #4361EE; \} /* Brilliant Blue Secondary */\
+        .brand-accent \{ color: #7209B7; \} /* Purple Accent */\
+        .bg-brand-primary \{ background-color: #0052D4; \}\
+        .bg-brand-secondary \{ background-color: #4361EE; \}\
+        .progress-arrow \{\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            width: 2.5rem;\
+            height: 2.5rem;\
+            border-radius: 50%;\
+            background-color: #E0E7FF; /* Light Indigo */\
+            color: #4361EE; /* Brilliant Blue Secondary */\
+            font-size: 1.5rem;\
+            margin: 0.5rem 0;\
+        \}\
+         .sticky-nav \{\
+            position: -webkit-sticky; /* Safari */\
+            position: sticky;\
+            top: 0;\
+            z-index: 50;\
+            background-color: rgba(255, 255, 255, 0.9);\
+            backdrop-filter: blur(10px);\
+        \}\
+    </style>\
+</head>\
+<body class="antialiased text-gray-800">\
+\
+    <header class="bg-brand-primary text-white py-8 shadow-lg">\
+        <div class="container mx-auto px-6 text-center">\
+            <h1 class="text-4xl font-bold">\uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u30740 \u31350 \u12398 \u26368 \u26032 \u21205 \u21521 </h1>\
+            <p class="mt-2 text-lg">\uc0\u12487 \u12540 \u12479 \u12395 \u22522 \u12389 \u12367 \u12452 \u12531 \u12469 \u12452 \u12488 \u12392 \u23558 \u26469 \u23637 \u26395 </p>\
+        </div>\
+    </header>\
+\
+    <nav class="sticky-nav shadow-md">\
+        <div class="container mx-auto px-6 py-3">\
+            <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6">\
+                <li><a href="#introduction" class="text-gray-700 hover:text-brand-primary font-medium">\uc0\u12399 \u12376 \u12417 \u12395 </a></li>\
+                <li><a href="#research-trends" class="text-gray-700 hover:text-brand-primary font-medium">\uc0\u30740 \u31350 \u35542 \u25991 \u12398 \u21205 \u21521 </a></li>\
+                <li><a href="#key-topics" class="text-gray-700 hover:text-brand-primary font-medium">\uc0\u27880 \u30446 \u12488 \u12500 \u12483 \u12463 </a></li>\
+                <li><a href="#value-chain" class="text-gray-700 hover:text-brand-primary font-medium">\uc0\u12496 \u12522 \u12517 \u12540 \u12481 \u12455 \u12540 \u12531 </a></li>\
+                <li><a href="#conclusion" class="text-gray-700 hover:text-brand-primary font-medium">\uc0\u32080 \u35542 </a></li>\
+            </ul>\
+        </div>\
+    </nav>\
+\
+    <main class="container mx-auto px-6 py-12">\
+\
+        <section id="introduction" class="mb-16 scroll-mt-20">\
+            <div class="stat-card">\
+                <h2 class="text-3xl font-semibold brand-primary mb-6 text-center">\uc0\u12399 \u12376 \u12417 \u12395 \u65306 \u12461 \u12515 \u12483 \u12469 \u12496 \u12398 \u37325 \u35201 \u24615 </h2>\
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">\
+                    \uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u65288 *Manihot esculenta Crantz*\u65289 \u12399 \u12289 \u19990 \u30028 \u12398 \u29105 \u24111 \u22320 \u22495 \u12391 10\u20740 \u20154 \u20197 \u19978 \u12398 \u20027 \u35201 \u12394 \u39135 \u26009 \u28304 \u12391 \u12354 \u12426 \u12289 \u29305 \u12395 \u12469 \u12495 \u12521 \u20197 \u21335 \u12398 \u12450 \u12501 \u12522 \u12459 \u12391 \u12399 5\u20740 \u20154 \u20197 \u19978 \u12398 \u29983 \u35336 \u12434 \u25903 \u12360 \u12427 \u12289 \u39135 \u26009 \u23433 \u20840 \u20445 \u38556 \u12392 \u36007 \u22256 \u21066 \u28187 \u12395 \u19981 \u21487 \u27424 \u12394 \u20316 \u29289 \u12391 \u12377 \u12290 \u27671 \u20505 \u22793 \u21205 \u12408 \u12398 \u32784 \u24615 \u12289 \u21155 \u24746 \u12394 \u22303 \u22732 \u12391 \u12398 \u26685 \u22521 \u36969 \u24540 \u24615 \u12289 \u33258 \u28982 \u28797 \u23475 \u26178 \u12398 \u12300 \u20445 \u38522 \u20316 \u29289 \u12301 \u12392 \u12375 \u12390 \u12398 \u27231 \u33021 \u12394 \u12393 \u12289 \u12381 \u12398 \u29305 \u24615 \u12399 \u19981 \u23433 \u23450 \u12394 \u27671 \u20505 \u26465 \u20214 \u19979 \u12391 \u12398 \u39135 \u26009 \u20379 \u32102 \u23433 \u23450 \u21270 \u12395 \u22823 \u12365 \u12367 \u23492 \u19982 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 \
+                </p>\
+                <p class="text-lg text-gray-700 leading-relaxed">\
+                    \uc0\u26412 \u12452 \u12531 \u12501 \u12457 \u12464 \u12521 \u12501 \u12451 \u12483 \u12463 \u12399 \u12289 \u36942 \u21435 10\u24180 \u38291 \u12434 \u20013 \u24515 \u12392 \u12375 \u12383 \u12461 \u12515 \u12483 \u12469 \u12496 \u30740 \u31350 \u12398 \u26368 \u26032 \u21205 \u21521 \u12434 \u35222 \u35226 \u30340 \u12395 \u20998 \u26512 \u12375 \u12289 \u20027 \u35201 \u12394 \u30740 \u31350 \u20998 \u37326 \u12398 \u27880 \u30446 \u12488 \u12500 \u12483 \u12463 \u12289 \u35542 \u25991 \u30330 \u34920 \u25968 \u12398 \u25512 \u31227 \u12289 \u12381 \u12375 \u12390 \u12371 \u12428 \u12425 \u12398 \u30740 \u31350 \u12364 \u39135 \u26009 \u23433 \u20840 \u20445 \u38556 \u12420 \u31038 \u20250 \u32076 \u28168 \u38283 \u30330 \u12395 \u19982 \u12360 \u12427 \u24433 \u38911 \u12434 \u26126 \u12425 \u12363 \u12395 \u12375 \u12414 \u12377 \u12290 \
+                </p>\
+            </div>\
+        </section>\
+\
+        <section id="research-trends" class="mb-16 scroll-mt-20">\
+            <h2 class="text-3xl font-semibold brand-primary mb-8 text-center">\uc0\u30740 \u31350 \u35542 \u25991 \u12398 \u21205 \u21521 </h2>\
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">\
+                <div class="stat-card">\
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">\uc0\u35542 \u25991 \u30330 \u34920 \u25968 \u12398 \u25512 \u31227 </h3>\
+                    <p class="text-gray-600 mb-4">\uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u38306 \u36899 \u12398 \u31185 \u23398 \u35542 \u25991 \u30330 \u34920 \u25968 \u12399 \u36942 \u21435 20\u24180 \u38291 \u12391 \u33879 \u12375 \u12367 \u22679 \u21152 \u12375 \u12390 \u12362 \u12426 \u12289 2000\u24180 \u12398 180\u22577 \u12363 \u12425 2023\u24180 8\u26376 \u12395 \u12399 13,238\u22577 \u12408 \u12392 \u32047 \u31309 \u25968 \u12364 \u22679 \u21152 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 \u12371 \u12428 \u12399 \u22269 \u38555 \u30340 \u12394 \u38306 \u24515 \u12392 \u25237 \u36039 \u12398 \u39640 \u12414 \u12426 \u12434 \u31034 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 </p>\
+                    <div class="chart-container">\
+                        <canvas id="publicationsChart"></canvas>\
+                    </div>\
+                    <p class="text-sm text-gray-500 mt-2 text-center">\uc0\u20986 \u20856 : Scopus\u12487 \u12540 \u12479 \u12505 \u12540 \u12473 </p>\
+                </div>\
+\
+                <div class="stat-card">\
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">\uc0\u20027 \u35201 \u36002 \u29486 \u22269  (2000-2023\u24180 )</h3>\
+                     <p class="text-gray-600 mb-4">\uc0\u30740 \u31350 \u35542 \u25991 \u12398 \u30330 \u34920 \u25968 \u12391 \u12399 \u12502 \u12521 \u12472 \u12523 \u12364 \u26368 \u12418 \u22810 \u12367 \u12289 \u27425 \u12356 \u12391 \u12490 \u12452 \u12472 \u12455 \u12522 \u12450 \u12289 \u20013 \u22269 \u12364 \u32154 \u12365 \u12414 \u12377 \u12290 \u22269 \u38555 \u20849 \u21516 \u30740 \u31350 \u12418 \u27963 \u30330 \u12391 \u12377 \u12290 </p>\
+                    <div class="chart-container h-[380px] md:h-[400px]">\
+                        <canvas id="countriesChart"></canvas>\
+                    </div>\
+                     <p class="text-sm text-gray-500 mt-2 text-center">\uc0\u20986 \u20856 : Scopus\u12487 \u12540 \u12479 \u12505 \u12540 \u12473 </p>\
+                </div>\
+            </div>\
+            <div class="stat-card mt-8">\
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4 text-center">\uc0\u20027 \u35201 \u30740 \u31350 \u20998 \u37326 </h3>\
+                <p class="text-gray-600 mb-4 text-center">\uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u30740 \u31350 \u12399 \u22810 \u23696 \u12395 \u12431 \u12383 \u12426 \u12414 \u12377 \u12364 \u12289 \u29305 \u12395 \u36786 \u26989 \u12539 \u29983 \u29289 \u31185 \u23398 \u12289 \u29983 \u21270 \u23398 \u12539 \u36986 \u20253 \u23398 \u12539 \u20998 \u23376 \u29983 \u29289 \u23398 \u12364 \u22823 \u12365 \u12394 \u21106 \u21512 \u12434 \u21344 \u12417 \u12390 \u12356 \u12414 \u12377 \u12290 </p>\
+                <div class="chart-container mx-auto">\
+                    <canvas id="researchFieldsChart"></canvas>\
+                </div>\
+                <p class="text-sm text-gray-500 mt-2 text-center">\uc0\u20986 \u20856 : Scopus\u12487 \u12540 \u12479 \u12505 \u12540 \u12473  (\u36786 \u26989 \u12539 \u29983 \u29289 \u31185 \u23398  32%, \u29983 \u21270 \u23398 \u12539 \u36986 \u20253 \u23398 \u12539 \u20998 \u23376 \u29983 \u29289 \u23398  11.2%, \u29872 \u22659 \u31185 \u23398  7.8%, \u21270 \u23398  6.2%)</p>\
+            </div>\
+        </section>\
+\
+        <section id="key-topics" class="mb-16 scroll-mt-20">\
+            <h2 class="text-3xl font-semibold brand-primary mb-8 text-center">\uc0\u20027 \u35201 \u30740 \u31350 \u20998 \u37326 \u12398 \u27880 \u30446 \u12488 \u12500 \u12483 \u12463 </h2>\
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">\
+                \
+                <div class="stat-card flex flex-col">\
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3"><span class="text-3xl mr-2">\uc0\u55358 \u56812 </span>\u12466 \u12494 \u12511 \u12463 \u12473 \u12539 \u32946 \u31278 </h3>\
+                    <p class="text-gray-600 mb-3 text-sm flex-grow">NGS\uc0\u25216 \u34899 \u12395 \u12424 \u12426 \u12466 \u12494 \u12512 \u35299 \u35501 \u12364 \u36914 \u12415 \u12289 \u36986 \u20253 \u23376 \u30330 \u35211 \u12420 \u26032 \u21697 \u31278 \u38283 \u30330 \u12364 \u21152 \u36895 \u12290 \u12466 \u12494 \u12512 \u36984 \u25244 (GS)\u12420 CRISPR/Cas9\u12394 \u12393 \u12398 \u36986 \u20253 \u23376 \u32232 \u38598 \u25216 \u34899 \u12364 \u12289 \u30149 \u23475 \u25269 \u25239 \u24615 \u12289 \u21697 \u36074 \u21521 \u19978 \u12289 PPD\u36933 \u24310 \u12395 \u36002 \u29486 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 </p>\
+                    <div class="mt-auto">\
+                        <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">\uc0\u12466 \u12494 \u12512 \u36984 \u25244 </span>\
+                        <span class="inline-block bg-purple-100 text-purple-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">\uc0\u36986 \u20253 \u23376 \u32232 \u38598 </span>\
+                        <span class="inline-block bg-pink-100 text-pink-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">\uc0\u36805 \u36895 \u32946 \u31278 </span>\
+                    </div>\
+                </div>\
+\
+                <div class="stat-card flex flex-col">\
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3"><span class="text-3xl mr-2">\uc0\u55358 \u56736 </span>\u30149 \u23475 \u34411 \u25269 \u25239 \u24615 </h3>\
+                    <p class="text-gray-600 mb-3 text-sm flex-grow">CMD\uc0\u12420 CBSD\u12394 \u12393 \u12398 \u12454 \u12452 \u12523 \u12473 \u30149 \u23550 \u31574 \u12364 \u37325 \u35201 \u12290 CMD2\u22411 \u25269 \u25239 \u24615 \u36986 \u20253 \u23376 \u12398 \u29305 \u23450 \u12399 \u30011 \u26399 \u30340 \u25104 \u26524 \u12391 \u12354 \u12426 \u12289 \u20182 \u20316 \u29289 \u12408 \u12398 \u24540 \u29992 \u12418 \u26399 \u24453 \u12373 \u12428 \u12414 \u12377 \u12290 \u12464 \u12521 \u12501 \u12488 \u24863 \u26579 \u27861 \u12394 \u12393 \u26032 \u12375 \u12356 \u12473 \u12463 \u12522 \u12540 \u12491 \u12531 \u12464 \u25163 \u27861 \u12418 \u38283 \u30330 \u12373 \u12428 \u12390 \u12356 \u12414 \u12377 \u12290 </p>\
+                     <div class="mt-auto">\
+                        <span class="inline-block bg-red-100 text-red-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">CMD\uc0\u23550 \u31574 </span>\
+                        <span class="inline-block bg-orange-100 text-orange-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">CBSD\uc0\u23550 \u31574 </span>\
+                        <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">\uc0\u38450 \u24481 \u36986 \u20253 \u23376 </span>\
+                    </div>\
+                </div>\
+\
+                <div class="stat-card flex flex-col">\
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3"><span class="text-3xl mr-2">\uc0\u55358 \u56661 </span>\u26628 \u39178 \u20385 \u21521 \u19978 </h3>\
+                    <p class="text-gray-600 mb-3 text-sm flex-grow">\uc0\u12503 \u12525 \u12499 \u12479 \u12511 \u12531 A\u12289 \u12479 \u12531 \u12497 \u12463 \u36074 \u31561 \u12398 \u24494 \u37327 \u26628 \u39178 \u32032 \u12434 \u24375 \u21270 \u12377 \u12427 \u12496 \u12452 \u12458 \u12501 \u12457 \u12540 \u12488 \u12501 \u12451 \u12465 \u12540 \u12471 \u12519 \u12531 \u12364 \u36914 \u34892 \u20013 \u12290 \u12471 \u12450 \u12531 \u21270 \u29289 \u12394 \u12393 \u27602 \u24615 \u25104 \u20998 \u20302 \u28187 \u12398 \u12383 \u12417 \u12398 \u21152 \u24037 \u25216 \u34899 \u30740 \u31350 \u12418 \u19981 \u21487 \u27424 \u12391 \u12377 \u12290 </p>\
+                    <div class="mt-auto">\
+                        <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">\uc0\u12496 \u12452 \u12458 \u24375 \u21270 </span>\
+                        <span class="inline-block bg-teal-100 text-teal-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">\uc0\u12479 \u12531 \u12497 \u12463 \u36074 \u22679 \u24375 </span>\
+                        <span class="inline-block bg-cyan-100 text-cyan-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">\uc0\u27602 \u24615 \u20302 \u28187 </span>\
+                    </div>\
+                </div>\
+\
+                <div class="stat-card flex flex-col">\
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3"><span class="text-3xl mr-2">\uc0\u55356 \u57325 </span>\u21152 \u24037 \u25216 \u34899 \u12539 \u29987 \u26989 \u21033 \u29992 </h3>\
+                    <p class="text-gray-600 mb-3 text-sm flex-grow">\uc0\u21177 \u29575 \u30340 \u12394 \u21152 \u24037 \u25216 \u34899 \u38283 \u30330 \u12289 NIRS\u31561 \u12398 \u39640 \u21177 \u29575 \u34920 \u29694 \u22411 \u35299 \u26512 \u12484 \u12540 \u12523 \u12398 \u23566 \u20837 \u12364 \u36914 \u12435 \u12391 \u12356 \u12414 \u12377 \u12290 \u39135 \u21697 \u12395 \u21152 \u12360 \u12289 \u21307 \u34220 \u21697 \u12289 \u12496 \u12452 \u12458 \u29123 \u26009 \u12289 \u29983 \u20998 \u35299 \u24615 \u12503 \u12521 \u12473 \u12481 \u12483 \u12463 \u12289 \u21205 \u29289 \u39164 \u26009 \u12394 \u12393 \u22810 \u27096 \u12394 \u29987 \u26989 \u12408 \u12398 \u24540 \u29992 \u12364 \u25313 \u22823 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 </p>\
+                    <p class="text-gray-700 font-bold brand-secondary text-lg mt-2">\uc0\u24066 \u22580 \u20104 \u28204 : 2033\u24180 \u12395 3\u20740 6580\u19975 \u12488 \u12531 </p>\
+                </div>\
+                \
+                <div class="stat-card flex flex-col">\
+                     <h3 class="text-xl font-semibold text-gray-700 mb-3"><span class="text-3xl mr-2">\uc0\u9728 \u65039 </span>\u27671 \u20505 \u22793 \u21205 \u36969 \u24540 </h3>\
+                    <p class="text-gray-600 mb-3 text-sm flex-grow">\uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u12399 \u27671 \u20505 \u22793 \u21205 \u12395 \u24375 \u12356 \u12300 \u36007 \u22256 \u21066 \u28187 \u20316 \u29289 \u12301 \u12290 \u29983 \u32946 \u26399 \u38291 \u22793 \u21270 \u12289 \u27700 \u12473 \u12488 \u12524 \u12473 \u12289 \u21697 \u36074 \u20302 \u19979 \u12394 \u12393 \u12395 \u23550 \u24540 \u12377 \u12427 \u12383 \u12417 \u12289 \u12473 \u12488 \u12524 \u12473 \u32784 \u24615 \u21697 \u31278 \u12398 \u38283 \u30330 \u12392 \u25345 \u32154 \u21487 \u33021 \u12394 \u26685 \u22521 \u25126 \u30053 \u12364 \u37325 \u35201 \u12391 \u12377 \u12290 </p>\
+                    <div class="mt-auto">\
+                        <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">\uc0\u32784 \u20094 \u24615 </span>\
+                        <span class="inline-block bg-gray-100 text-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">\uc0\u32784 \u30149 \u24615 </span>\
+                         <span class="inline-block bg-lime-100 text-lime-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">\uc0\u25345 \u32154 \u21487 \u33021 \u36786 \u26989 </span>\
+                    </div>\
+                </div>\
+\
+                 <div class="stat-card flex flex-col items-center justify-center text-center bg-brand-secondary text-white">\
+                    <span class="text-5xl mb-3">\uc0\u55357 \u56481 </span>\
+                    <h3 class="text-2xl font-semibold mb-2">\uc0\u32946 \u31278 \u12539 \u22679 \u27542 \u25216 \u34899 \u38761 \u26032 </h3>\
+                    <p class="text-sm leading-relaxed">\uc0\u38283 \u33457 \u20419 \u36914 \u25216 \u34899 \u65288 \u20809 \u21608 \u25805 \u20316 \u31561 \u65289 \u12391 \u31278 \u23376 \u29983 \u29987 \u37327 \u12364 \u26368 \u22823 15\u20493 \u12395 \u12290 \u21322 \u33258 \u26628 \u39178 \u27700 \u32789 \u26685 \u22521 \u65288 SAHTECNO\u65289 \u12391 \u33495 \u29983 \u29987 \u12364 10\u20493 \u20197 \u19978 \u12395 \u21521 \u19978 \u12375 \u12289 \u25913 \u33391 \u21697 \u31278 \u12398 \u26222 \u21450 \u12434 \u21152 \u36895 \u12290 </p>\
+                </div>\
+\
+\
+            </div>\
+        </section>\
+\
+        <section id="value-chain" class="mb-16 scroll-mt-20">\
+            <h2 class="text-3xl font-semibold brand-primary mb-8 text-center">\uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u30740 \u31350 \u38283 \u30330 \u12398 \u12496 \u12522 \u12517 \u12540 \u12481 \u12455 \u12540 \u12531 </h2>\
+            <p class="text-gray-700 text-lg mb-8 text-center leading-relaxed">\uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u12398 \u30740 \u31350 \u38283 \u30330 \u12399 \u12289 \u22522 \u30990 \u30740 \u31350 \u12363 \u12425 \u22810 \u27096 \u12394 \u29987 \u26989 \u24540 \u29992 \u12414 \u12391 \u12289 \u36899 \u32154 \u30340 \u12394 \u12503 \u12525 \u12475 \u12473 \u12434 \u32076 \u12390 \u20385 \u20516 \u12434 \u29983 \u12415 \u20986 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 </p>\
+            <div class="overflow-x-auto pb-4">\
+                <div class="flex flex-col md:flex-row items-stretch md:items-center justify-around space-y-4 md:space-y-0 md:space-x-2 min-w-max px-2">\
+                    \
+                    <div class="stat-card flex-1 text-center p-4 min-w-[180px]">\
+                        <div class="text-3xl mb-2">\uc0\u55357 \u56620 </div>\
+                        <h4 class="font-semibold text-gray-700">\uc0\u22522 \u30990 \u30740 \u31350 </h4>\
+                        <p class="text-xs text-gray-500">\uc0\u12466 \u12494 \u12512 \u35299 \u26512 \u12289 \u36986 \u20253 \u23376 \u27231 \u33021 \u21516 \u23450 </p>\
+                    </div>\
+                    <div class="self-center progress-arrow hidden md:flex">\uc0\u8594 </div>\
+                    <div class="self-center progress-arrow rotate-90 md:hidden">\uc0\u8595 </div>\
+\
+                    <div class="stat-card flex-1 text-center p-4 min-w-[180px]">\
+                        <div class="text-3xl mb-2">\uc0\u55356 \u57137 </div>\
+                        <h4 class="font-semibold text-gray-700">\uc0\u32946 \u31278 \u12539 \u22679 \u27542 </h4>\
+                        <p class="text-xs text-gray-500">\uc0\u36986 \u20253 \u23376 \u32232 \u38598 \u12289 \u12466 \u12494 \u12512 \u36984 \u25244 \u12289 SAHTECNO</p>\
+                    </div>\
+                    <div class="self-center progress-arrow hidden md:flex">\uc0\u8594 </div>\
+                    <div class="self-center progress-arrow rotate-90 md:hidden">\uc0\u8595 </div>\
+                    \
+                    <div class="stat-card flex-1 text-center p-4 min-w-[180px]">\
+                        <div class="text-3xl mb-2">\uc0\u55357 \u57057 \u65039 </div>\
+                        <h4 class="font-semibold text-gray-700">\uc0\u26685 \u22521 \u12539 \u31649 \u29702 </h4>\
+                        <p class="text-xs text-gray-500">\uc0\u30149 \u23475 \u34411 \u25269 \u25239 \u24615 \u12289 \u27671 \u20505 \u22793 \u21205 \u36969 \u24540 \u12289 \u25345 \u32154 \u21487 \u33021 \u36786 \u27861 </p>\
+                    </div>\
+                    <div class="self-center progress-arrow hidden md:flex">\uc0\u8594 </div>\
+                    <div class="self-center progress-arrow rotate-90 md:hidden">\uc0\u8595 </div>\
+\
+                    <div class="stat-card flex-1 text-center p-4 min-w-[180px]">\
+                        <div class="text-3xl mb-2">\uc0\u9881 \u65039 </div>\
+                        <h4 class="font-semibold text-gray-700">\uc0\u21454 \u31339 \u12539 \u21152 \u24037 </h4>\
+                        <p class="text-xs text-gray-500">\uc0\u21177 \u29575 \u21270 \u25216 \u34899 \u12289 \u21697 \u36074 \u21521 \u19978 \u12289 \u27602 \u24615 \u20302 \u28187 </p>\
+                    </div>\
+                     <div class="self-center progress-arrow hidden md:flex">\uc0\u8594 </div>\
+                     <div class="self-center progress-arrow rotate-90 md:hidden">\uc0\u8595 </div>\
+\
+                    <div class="stat-card flex-1 text-center p-4 min-w-[180px]">\
+                        <div class="text-3xl mb-2">\uc0\u55356 \u57101 </div>\
+                        <h4 class="font-semibold text-gray-700">\uc0\u29987 \u26989 \u21033 \u29992 \u12539 \u28040 \u36027 </h4>\
+                        <p class="text-xs text-gray-500">\uc0\u39135 \u21697 \u12289 \u39164 \u26009 \u12289 \u12496 \u12452 \u12458 \u29123 \u26009 \u12289 \u12496 \u12452 \u12458 \u12503 \u12521 \u12473 \u12481 \u12483 \u12463 </p>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <section id="conclusion" class="scroll-mt-20">\
+            <div class="stat-card">\
+                <h2 class="text-3xl font-semibold brand-primary mb-6 text-center">\uc0\u32080 \u35542 \u12392 \u20170 \u24460 \u12398 \u23637 \u26395 </h2>\
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">\
+                    \uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u30740 \u31350 \u12399 \u36942 \u21435 10\u24180 \u12391 \u39131 \u36493 \u30340 \u12394 \u36914 \u23637 \u12434 \u36930 \u12370 \u12289 \u35542 \u25991 \u30330 \u34920 \u25968 \u12289 \u30740 \u31350 \u20998 \u37326 \u12398 \u22810 \u27096 \u24615 \u12392 \u12418 \u12395 \u25313 \u22823 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 \u12466 \u12494 \u12511 \u12463 \u12473 \u12289 \u30149 \u23475 \u25269 \u25239 \u24615 \u12289 \u26628 \u39178 \u20385 \u21521 \u19978 \u12289 \u21152 \u24037 \u25216 \u34899 \u12289 \u27671 \u20505 \u22793 \u21205 \u36969 \u24540 \u12392 \u12356 \u12387 \u12383 \u20998 \u37326 \u12391 \u12398 \u38761 \u26032 \u12399 \u12289 \u12461 \u12515 \u12483 \u12469 \u12496 \u12434 \u21336 \u12394 \u12427 \u20027 \u39135 \u12363 \u12425 \u12289 \u25345 \u32154 \u21487 \u33021 \u12394 \u12496 \u12452 \u12458 \u36039 \u28304 \u12408 \u12392 \u12381 \u12398 \u20385 \u20516 \u12434 \u39640 \u12417 \u12390 \u12356 \u12414 \u12377 \u12290 \
+                </p>\
+                <p class="text-lg text-gray-700 leading-relaxed">\
+                    \uc0\u20170 \u24460 \u12398 \u35506 \u38988 \u12399 \u12289 \u30740 \u31350 \u36039 \u37329 \u12398 \u22320 \u29702 \u30340 \u12462 \u12515 \u12483 \u12503 \u35299 \u28040 \u12289 \u20027 \u35201 \u29983 \u29987 \u22269 \u12391 \u12398 \u30740 \u31350 \u33021 \u21147 \u24375 \u21270 \u12289 \u12381 \u12375 \u12390 \u22522 \u30990 \u30740 \u31350 \u12392 \u24540 \u29992 \u30740 \u31350 \u12398 \u36899 \u25658 \u24375 \u21270 \u12391 \u12377 \u12290 \u12371 \u12428 \u12395 \u12424 \u12426 \u12289 \u12461 \u12515 \u12483 \u12469 \u12496 \u12399 21\u19990 \u32000 \u12398 \u22320 \u29699 \u35215 \u27169 \u35506 \u38988 \u12395 \u23550 \u24540 \u12377 \u12427 \u12289 \u12424 \u12426 \u24375 \u21147 \u12394 \u12484 \u12540 \u12523 \u12392 \u12394 \u12427 \u12391 \u12375 \u12423 \u12358 \u12290 \
+                </p>\
+            </div>\
+        </section>\
+    </main>\
+\
+    <footer class="bg-gray-800 text-white py-8 mt-16">\
+        <div class="container mx-auto px-6 text-center">\
+            <p class="text-sm">&copy; 2025 \uc0\u12461 \u12515 \u12483 \u12469 \u12496 \u30740 \u31350 \u21205 \u21521 \u12452 \u12531 \u12501 \u12457 \u12464 \u12521 \u12501 \u12451 \u12483 \u12463 . All rights reserved.</p>\
+            <p class="text-xs mt-1">\uc0\u26412 \u12452 \u12531 \u12501 \u12457 \u12464 \u12521 \u12501 \u12451 \u12483 \u12463 \u12399 \u25552 \u20379 \u12373 \u12428 \u12383 \u12524 \u12509 \u12540 \u12488 \u12395 \u22522 \u12389 \u12356 \u12390 \u20316 \u25104 \u12373 \u12428 \u12390 \u12356 \u12414 \u12377 \u12290 </p>\
+        </div>\
+    </footer>\
+\
+    <script>\
+        const CHART_COLORS = \{\
+            blue: 'rgb(67, 97, 238)',    // #4361EE\
+            lightBlue: 'rgb(0, 82, 212)', // #0052D4\
+            purple: 'rgb(114, 9, 183)',   // #7209B7\
+            pink: 'rgb(247, 37, 133)',    // #F72585\
+            magenta: 'rgb(181, 23, 158)', // #B5179E\
+            orange: 'rgb(255, 159, 64)',\
+            yellow: 'rgb(255, 205, 86)',\
+            green: 'rgb(75, 192, 192)',\
+            grey: 'rgb(201, 203, 207)'\
+        \};\
+\
+        const MONTHS = ['2011', '2021', '2022', '2023'];\
+\
+        function wrapLabels(label, maxWidth) \{\
+            const words = label.split(' ');\
+            let lines = [];\
+            let currentLine = '';\
+            for (const word of words) \{\
+                if ((currentLine + word).length > maxWidth) \{\
+                    lines.push(currentLine.trim());\
+                    currentLine = '';\
+                \}\
+                currentLine += word + ' ';\
+            \}\
+            lines.push(currentLine.trim());\
+            return lines.filter(line => line !== '');\
+        \}\
+        \
+        const tooltipTitleCallback = (tooltipItems) => \{\
+            const item = tooltipItems[0];\
+            let label = item.chart.data.labels[item.dataIndex];\
+            if (Array.isArray(label)) \{\
+                return label.join(' ');\
+            \} else \{\
+                return label;\
+            \}\
+        \};\
+\
+        // Publications Chart\
+        const publicationsCtx = document.getElementById('publicationsChart').getContext('2d');\
+        new Chart(publicationsCtx, \{\
+            type: 'line',\
+            data: \{\
+                labels: ['2011', '2021', '2022', '2023 (8\uc0\u26376 \u12414 \u12391 )'],\
+                datasets: [\{\
+                    label: '\uc0\u32047 \u31309 \u35542 \u25991 \u30330 \u34920 \u25968 ',\
+                    data: [3823, 11382, 12491, 13238],\
+                    borderColor: CHART_COLORS.blue,\
+                    backgroundColor: 'rgba(67, 97, 238, 0.2)',\
+                    fill: true,\
+                    tension: 0.1\
+                \}]\
+            \},\
+            options: \{\
+                responsive: true,\
+                maintainAspectRatio: false,\
+                scales: \{\
+                    y: \{\
+                        beginAtZero: true,\
+                        title: \{ display: true, text: '\uc0\u32047 \u31309 \u35542 \u25991 \u25968 ' \}\
+                    \},\
+                    x: \{\
+                         title: \{ display: true, text: '\uc0\u24180 ' \}\
+                    \}\
+                \},\
+                plugins: \{\
+                    legend: \{ position: 'top' \},\
+                    tooltip: \{\
+                        callbacks: \{ title: tooltipTitleCallback \}\
+                    \}\
+                \}\
+            \}\
+        \});\
+\
+        // Countries Chart\
+        const countriesCtx = document.getElementById('countriesChart').getContext('2d');\
+        new Chart(countriesCtx, \{\
+            type: 'bar',\
+            data: \{\
+                labels: ['\uc0\u12502 \u12521 \u12472 \u12523 ', '\u12490 \u12452 \u12472 \u12455 \u12522 \u12450 ', '\u20013 \u22269 ', '\u12479 \u12452 ', '\u31859 \u22269 '].map(label => wrapLabels(label,16)),\
+                datasets: [\{\
+                    label: '\uc0\u35542 \u25991 \u30330 \u34920 \u25968 ',\
+                    data: [2534, 2001, 1549, 1367, 1142],\
+                    backgroundColor: [\
+                        CHART_COLORS.blue,\
+                        CHART_COLORS.purple,\
+                        CHART_COLORS.pink,\
+                        CHART_COLORS.orange,\
+                        CHART_COLORS.green\
+                    ],\
+                    borderColor: '#ffffff',\
+                    borderWidth: 1\
+                \}]\
+            \},\
+            options: \{\
+                indexAxis: 'y',\
+                responsive: true,\
+                maintainAspectRatio: false,\
+                scales: \{\
+                    x: \{\
+                        title: \{ display: true, text: '\uc0\u35542 \u25991 \u25968 ' \}\
+                    \}\
+                \},\
+                plugins: \{\
+                    legend: \{ display: false \},\
+                     tooltip: \{\
+                        callbacks: \{ title: tooltipTitleCallback \}\
+                    \}\
+                \}\
+            \}\
+        \});\
+        \
+        // Research Fields Chart\
+        const researchFieldsCtx = document.getElementById('researchFieldsChart').getContext('2d');\
+        new Chart(researchFieldsCtx, \{\
+            type: 'doughnut',\
+            data: \{\
+                labels: ['\uc0\u36786 \u26989 \u12539 \u29983 \u29289 \u31185 \u23398 ', '\u29983 \u21270 \u23398 \u12539 \u36986 \u20253 \u23398 \u12539 \u20998 \u23376 \u29983 \u29289 \u23398 ', '\u29872 \u22659 \u31185 \u23398 ', '\u21270 \u23398 ', '\u12381 \u12398 \u20182 '].map(label => wrapLabels(label,16)),\
+                datasets: [\{\
+                    label: '\uc0\u30740 \u31350 \u20998 \u37326 \u12398 \u21106 \u21512 ',\
+                    data: [32, 11.2, 7.8, 6.2, (100-32-11.2-7.8-6.2)],\
+                    backgroundColor: [\
+                        CHART_COLORS.blue,\
+                        CHART_COLORS.purple,\
+                        CHART_COLORS.green,\
+                        CHART_COLORS.orange,\
+                        CHART_COLORS.grey\
+                    ],\
+                    hoverOffset: 4\
+                \}]\
+            \},\
+            options: \{\
+                responsive: true,\
+                maintainAspectRatio: false,\
+                plugins: \{\
+                    legend: \{ position: 'bottom' \},\
+                    tooltip: \{\
+                        callbacks: \{ title: tooltipTitleCallback \}\
+                    \}\
+                \}\
+            \}\
+        \});\
+    </script>\
+</body>\
+</html>\
+}
